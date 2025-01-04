@@ -55,7 +55,7 @@ export const SingleTodo = ({ todo, todos, setTodos }: Props) => {
                     type="text"
                     value={editTodo}
                     onChange={(e) => {
-                        setEditTodo(e.target.value)
+                        setEditTodo((e.target as HTMLInputElement).value)
                     }}
                 />
             ) : todo.isDone ? (

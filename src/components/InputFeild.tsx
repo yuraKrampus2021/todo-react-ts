@@ -22,7 +22,7 @@ export const InputFeild = ({ todo, setTodo, handleAdd }: Props) => {
                 ref={inputRef}
                 value={todo}
                 onChange={(e) => {
-                    setTodo(e.target.value)
+                    setTodo((e.target as HTMLInputElement).value)
                 }}
                 className="input__box"
                 type="input"
